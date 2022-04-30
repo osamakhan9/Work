@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div id="img">
+        <img src="https://sso.masaischool.com/brand_dark.svg" alt="masailogo">
+    </div>
+   
+    
+    <div id="cont">
+        
+        <form id="form">
+            <h1>SignUp</h1>
+            <label for="">Full name</label></br>
+            <input id="name" type="text" placeholder="Enter your full name"/></br>
+            <label id="" for="">Email</label></br>
+            <input id="email" type="text" placeholder="Enter email"/></br>
+            <label for="">Password</label></br>
+            <input id="password" type="text" placeholder="Enter password"/></br>
+            <p>By signing up, I accept the Masai school
+                 <a href="">Terms of Service
+            </a> and acknowledge the 
+            <a href="">Privacy Policy</a>.</p></br>
+            <input id="submit" type="submit" /></br>
+            <h2>Already have an accoung? <a href="">Sign In</a></h2>
+        </form>
+        
+
+    </div>
+</body>
+</html>
+<script>
+
+    document.querySelector("#form").addEventListener("submit",signFun )
+
+var signArr=JSON.parse(localStorage.getItem("signList")) || []
+    function signFun(){
+        event.preventDefault()
+        var signObj={
+            username:form.name.value,
+            useremail:form.email.value,
+            userpass:form.password.value
+        }
+signArr.push(signObj)
+localStorage.setItem("signList",JSON.stringify(signArr))
+window.location.href="index.html"
+    }
+</script>

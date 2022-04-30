@@ -1,0 +1,48 @@
+#cont{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+h1{
+    display: block;
+    text-align: center;
+
+}
+h2{
+    font-weight: 100;
+}
+h2>a{
+text-decoration: none;
+color: rgb(15, 15, 197);
+}
+p{
+    text-align: center;
+}
+input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: x-large;
+    
+}
+label{
+    font-size:x-large;
+    text-align: right;
+}
+#form{
+    width: 400px;
+    background-color: antiquewhite;
+    border-color: white;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+}
+#img{
+    text-align: center;
+}
+#submit{
+    width: 70%;
+
+}
