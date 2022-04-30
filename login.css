@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0px; */
+    /* padding: 0px; */
+}
+body{
+    background: rgb(110,110,231);
+    background: linear-gradient(142deg, rgba(110,110,231,1) 7%, rgba(61,243,118,1) 48%, rgba(0,212,255,1) 87%);
+}
+#container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 160px;
+    /* padding-bottom: 300px; */
+    height: auto;
+    border-radius: 20px;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+input[type = Email] , input[type  = Password]{
+    border: 1px solid transparent;
+    border-bottom: 3px solid gray;
+    font-size: 20px;
+    padding: 8px;
+}
+input[type = submit]{
+    border-bottom: 3px solid gray;
+    font-size: 20px;
+    border: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    background: rgb(110,110,231);
+    background: linear-gradient(142deg, rgba(110,110,231,1) 7%, rgba(0,212,255,1) 87%);
+    color: white;
+}
+h1{
+    font-size: 40px;
+}
